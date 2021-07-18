@@ -1,0 +1,45 @@
+{
+  "name": "Springboot-Login-Registration",
+  "version": "1.0.0",
+  "description": "Springboot login and registration form\r ```\r echo \"# Springboot-Login-Registration\" >> README.md\r git init\r git add README.md\r git commit -m \"first commit\"\r git branch -M main\r git remote add origin https://github.com/AkshayAdagaleGitHub/Springboot-Login-Registration.git\r git push -u origin main\r ```\r ```\r …or push an existing repository from the command line\r git remote add origin https://github.com/AkshayAdagaleGitHub/Springboot-Login-Registration.git\r git branch -M main\r git push -u origin main\r ```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack serve --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkshayAdagaleGitHub/Springboot-Login-Registration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkshayAdagaleGitHub/Springboot-Login-Registration/issues"
+  },
+  "homepage": "https://github.com/AkshayAdagaleGitHub/Springboot-Login-Registration#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.1.0",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.1.0",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "joi": "^17.4.1",
+    "joi-browser": "^13.4.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
