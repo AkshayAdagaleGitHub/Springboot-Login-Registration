@@ -1,7 +1,9 @@
 .App {
+     text-align: center;
     margin: 1rem;
     font-family: Arial, helvetica, sans-serif;
     color: #222222;
+    padding-top: 64px;
 }
 /* @media all and (min-width: 480px) { */
 .Login {
@@ -10,6 +12,43 @@
 .Login form {
      margin: 0 auto;
      max-width: 320px;
+     padding-top: 90px;
 }
-  /* } */
-  
+/* #page-body {
+     max-width: 700px;
+     margin: auto;
+     padding-top: 64px;
+   } */
+   
+nav {
+     border-bottom: 4px solid black;
+     text-align: center;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background: white;
+   }
+   
+   nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+   }
+   
+   nav li {
+     display: inline-block;
+     padding-top: 16px;
+     padding-bottom: 16px;
+   }
+   
+   nav a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     padding: 16px 32px;
+   }
+   
+   nav a:hover {
+     background: black;
+     color: white;
+   }

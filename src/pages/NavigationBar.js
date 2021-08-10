@@ -1,12 +1,31 @@
 import { hot }  from 'react-hot-loader';
 import React from 'react';
-import './App.css';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import '../App.css';
+import { Link } from 'react-router-dom';
+// import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+// import { LinkContainer } from 'react-router-bootstrap'
 
 const NavigationBar = () => (
-    <div>
-        <Navbar bg="light" expand="lg">
+    <nav>
+        <ul>
+         <li>
+             <Link to="/">Home</Link>
+         </li>
+         <li>
+             <Link to="/loginForm">Login Form</Link>
+         </li>
+         <li>
+             <Link to="/registration">Register</Link>
+         </li>
+        </ul>
+      </nav>
+);
+
+export default hot(module)(NavigationBar);
+
+
+/*
+   <Navbar bg="light" expand="lg">
             <Navbar.Brand href="/">Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -39,7 +58,4 @@ const NavigationBar = () => (
                         </Form>
                 </Navbar.Collapse>
             </Navbar>
-    </div>
-);
-
-export default hot(module)(NavigationBar);
+*/
