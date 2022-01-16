@@ -17,6 +17,9 @@ const NavigationBar = () => (
          <li>
              <Link to="/registration">Register</Link>
          </li>
+         <li>
+             <Link to="/upload">Upload</Link>
+         </li>
         </ul>
       </nav>
 );
