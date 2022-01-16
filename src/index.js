@@ -7,6 +7,7 @@ import LoginForm from './pages/LoginForm';
 import Registration from './pages/Registration';
 import NavigationBar from './pages/NavigationBar';
 import NotFoundPage from './pages/NotFoundPage';
+import Upload from './pages/Upload';
 
 ReactDom.render( 
     <React.StrictMode>
@@ -15,7 +16,8 @@ ReactDom.render(
             <Switch>
                 <Route exact path="/" component={App} />
                 <Route path="/loginForm" component={LoginForm} />
-                <Route path="/registration" component={Registration} />     
+                <Route path="/registration" component={Registration} />
+                <Route path="/upload" component={Upload} />     
                 <Route component={NotFoundPage} />     
             </Switch>
         </Router>
