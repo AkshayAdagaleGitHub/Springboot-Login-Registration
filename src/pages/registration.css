@@ -1,0 +1,74 @@
+.registration-page {
+    margin-top: 40in;
+    margin: 2rem;
+    padding: 0%;
+}
+
+.registration-page li {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.registration-page ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+
+.registration-page form {
+    border-color: black;
+    border: 10in;
+    margin-top: auto;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.registration-page button {
+    border-color: black;
+    border: 2in;
+    margin-top: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.registration-page input {
+    border-color: black;
+    border: 2in;
+    margin-top: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.form{
+    background-color: white;
+    border-radius: 5px;
+    width: 550px;
+    margin: 60px auto;
+    padding: 20px;
+    margin-top: 1in;
+    height: 400px;
+}
+
+.form-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-body > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+}
+
+.form_input{
+    width: 60%;
+}
+
+.footer{
+    text-align: center;
+}
+

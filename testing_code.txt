@@ -1,0 +1,49 @@
+	// <div className="registration-page">
+		//   <form className="registration-page form" onSubmit={handleSubmit}>
+		// 	<ul>
+		// 	<li><input className='.registration-page input' type='file' name='file' multiple onChange={handleFileChange}></input></li>
+		// 	</ul>
+
+		// 	<button type='submit'>Submit</button>
+		// 	<div className="registration img">
+        //         <ul>
+		// 	{ image.preview &&	<img src={image.preview} width="50" height="60" />}
+        //    {/* Display all selected images. */}        
+        //     {/* {image.files && [...image.files].map((file)=>(
+        //        <li> 
+        //            <img src={URL.createObjectURL(file)} width="50" height="60" />
+        //         </li>
+        //     ))} */}
+        //     </ul>
+        //         <hr></hr>
+        //     </div>
+        //   </form>
+
+		//   {/* {status && <h4>{status}</h4>} */}
+		// </div>
+        	// const handleFileChange = (e) => {
+    //     // if(image.files.length > 0){
+    //     //      image.files.push(e.target.files[0])
+    //     // }
+	//   const img = {
+	// 	preview: URL.createObjectURL(e.target.files[0]),
+	// 	file: e.target.files,
+	//   }
+	//   setImage(img)
+	// }
+
+     let formData = new FormData()
+
+	  formData.append('file', Buffer.from(image.file),{
+        filename: 'image1.jpg', 
+        contentType: 'image/png',
+      })
+	  const response = await fetch('http://localhost:8080/uploadImages', {
+		method: 'POST',
+        mode: 'no-cors',
+		body: formData,
+		headers: {
+			'Content-Type': 'multipart/form-data'
+			// 'Content-Type': 'application/x-www-form-urlencoded',
+		  },
+	})

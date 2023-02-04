@@ -7,6 +7,7 @@ import LoginForm from './pages/LoginForm';
 import Registration from './pages/Registration';
 import NavigationBar from './pages/NavigationBar';
 import NotFoundPage from './pages/NotFoundPage';
+import NewsPaper from './pages/NewsPaper';
 
 ReactDom.render( 
     <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDom.render(
                 <Route exact path="/" component={App} />
                 <Route path="/loginForm" component={LoginForm} />
                 <Route path="/registration" component={Registration} />     
+                <Route path="/newspaper" component={NewsPaper} />     
                 <Route component={NotFoundPage} />     
             </Switch>
         </Router>

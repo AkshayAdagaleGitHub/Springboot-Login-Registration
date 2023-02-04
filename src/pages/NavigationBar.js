@@ -2,21 +2,27 @@ import { hot }  from 'react-hot-loader';
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import nav from 'react-bootstrap/Nav';
+import './navigationbar.css'
 // import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 // import { LinkContainer } from 'react-router-bootstrap'
 
 const NavigationBar = () => (
-    <nav>
+    <nav className='navigationbar nav'>
         <ul>
          <li>
-             <Link to="/">Home</Link>
+             <Link to="/">TANHURAM</Link>
          </li>
          <li>
-             <Link to="/loginForm">Login Form</Link>
+             <Link to="/loginForm" >Login Form</Link>
          </li>
          <li>
              <Link to="/registration">Register</Link>
          </li>
+         <li>
+             <Link to="/newpaper">NewsPaper</Link>
+         </li>
+
         </ul>
       </nav>
 );

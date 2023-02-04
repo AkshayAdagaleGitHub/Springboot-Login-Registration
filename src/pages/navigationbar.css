@@ -1,0 +1,25 @@
+.navigationbar nav {
+    width: 40in;
+    height: 0in;
+    align-content: center;
+}
+
+
+nav li {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 16px 32px;
+  }
+  
+  nav a:hover {
+    background: black;
+    color: white;
+  }
+  

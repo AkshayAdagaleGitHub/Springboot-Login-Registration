@@ -1,0 +1,31 @@
+.form{
+    background-color: white;
+    border-radius: 2px;
+    width: 550px;
+    margin: 60px auto;
+    padding: 4px;
+    margin-top: 1in;
+    height: 360px;
+}
+
+.form-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-body > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+}
+
+.form_input{
+    width: 20%;
+}
+
+.footer{
+    text-align: center;
+}
+

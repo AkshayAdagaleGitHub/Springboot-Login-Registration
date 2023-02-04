@@ -2,7 +2,7 @@ import { hot }  from 'react-hot-loader';
 import React, { useState } from "react";
 // import "./App.css";
 import FormInputs from "./FormInputs";
-
+import './loginform.css'
 import Joi from "joi-browser";
 
 class LoginForm extends React.Component {
@@ -90,7 +90,8 @@ class LoginForm extends React.Component {
   }
   render() {
     return (
-    <div className="Login">
+		  <div className="form">
+          <div className="form-body">
       <form onSubmit={this.handleSubmit}>
         {this.state.submitSuccessfully && (
           <div class="alert alert-success" role="alert">
@@ -129,6 +130,7 @@ class LoginForm extends React.Component {
           Login
         </button>
       </form>
+    </div>
     </div>
     );
   }
